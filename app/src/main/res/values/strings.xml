@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Beautiful photo effect</string>
+    <string name="camera_activity_title">Camera</string>
 </resources>

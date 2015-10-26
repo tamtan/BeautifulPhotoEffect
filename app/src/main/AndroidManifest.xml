@@ -21,6 +21,9 @@
         <activity
             android:name=".Camera.CameraActivity_"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PhotoEffect.PhotoCroppingActivity_"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Beautifulphotoeffect.iml" filepath="$PROJECT_DIR$/Beautifulphotoeffect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BeautifulPhotoEffect.iml" filepath="$PROJECT_DIR$/BeautifulPhotoEffect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
