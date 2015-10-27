@@ -23,26 +23,29 @@ import org.androidannotations.annotations.ViewById;
 @EActivity (R.layout.photo_cropping_activity)
 public class PhotoCroppingActivity extends Activity {
 
+    ImageLoader imageLoader;
+    DisplayImageOptions displayOptions;
+    String picturePath;
     @ViewById
     TextView tv_title;
-    ImageView img_back, img_save;
-    private ImageLoader imageLoader;
-    private DisplayImageOptions displayOption;
+    @ViewById
+    ImageView img_back, img_save, gallery_image;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        picturePath = getIntent().getStringExtra("picturePath");
     }
     @AfterViews
     public void init(){
+
         imageLoader = ImageLoader.getInstance();
         imageLoader.init(ImageLoaderConfiguration.createDefault(this));
-        displayOption = new DisplayImageOptions.Builder()
+        displayOptions = new DisplayImageOptions.Builder()
                 .bitmapConfig(Bitmap.Config.ARGB_8888).cacheOnDisk(false)
-                .considerExifParams(false).cacheInMemory(true).build();
-
+                .considerExifParams(true).cacheInMemory(true).build();
+        imageLoader.displayImage("file://" + picturePath,
+                gallery_image,displayOptions);
     }
 
     @Override

@@ -19,7 +19,7 @@ import android.hardware.Camera.PictureCallback;
 import com.example.pc.beautifulphotoeffect.PhotoEffect.PhotoCroppingActivity;
 import com.example.pc.beautifulphotoeffect.PhotoEffect.PhotoCroppingActivity_;
 import com.example.pc.beautifulphotoeffect.R;
-import com.example.pc.beautifulphotoeffect.Util.Const;
+//import com.example.pc.beautifulphotoeffect.Util.Const;
 import com.example.pc.beautifulphotoeffect.Util.Util;
 
 import org.androidannotations.annotations.AfterViews;
@@ -181,7 +181,7 @@ public class CameraActivity extends Activity{
 //                ImageSession.getInstance().setBitmap(bitmaps.get(0));
 //                intent.putExtra("CheckCamera", getIntent().getExtras()
 //                        .getBoolean("CheckCamera"));
-                intent.putExtra(Const.URI_IN_CAMERA, uriOnePic );
+//                intent.putExtra(Const.URI_IN_CAMERA, uriOnePic );
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_right_enter,
                         R.anim.slide_right_leave);

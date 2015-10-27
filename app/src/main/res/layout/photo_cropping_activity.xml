@@ -10,7 +10,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_image"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="6" >-->
+
+            <!--<it.sephiroth.android.library.widget.HListView-->
+                <!--android:id="@+id/horizontal_lv"-->
+                <!--android:layout_height = "match_parent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scrollbars="horizontal"-->
+                 <!--/>-->
+        <!--</LinearLayout>-->
+        <!--app:hlv_dividerWidth="@dimen/divider_width_horizontal_listview"-->
+        <!--style="@style/horizontal_lv"-->
+    </LinearLayout>
 
 
 </LinearLayout>
