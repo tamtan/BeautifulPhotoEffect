@@ -38,12 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Click ({R.id.img_camera,R.id.img_gallery})
     public void onClick(View v){
-//        Toast.makeText(MainActivity.this, "hello",Toast.LENGTH_SHORT).show();
-//        Intent i = new Intent(MainActivity.this, CameraActivity_.class);
-//        startActivity(i);
-//        overridePendingTransition(R.anim.slide_left_enter, R.anim.no_anim);
-//        imageLoader.displayImage("file://" + photo.getUriBitmap(),
-//                holder.imageItem,disPlayoption);
         Intent i = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(i, REQUEST_LOAD_IMAGE);
     }
